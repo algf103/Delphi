@@ -1,0 +1,79 @@
+unit Globals;
+
+interface
+
+const
+  TotTipRef   = 8;            // Tipos de Refeições cadastradas
+  TotTipEst   = 5;            // Número de Estabelecimentos para cada tipo de Refeição
+  TotUsuarios = 10;           // Número de Usuários cadastrados
+
+
+type
+  tpCodAutent = (UsuOK,SenNaoOK,UsuNaoEx,UsuVotou);
+
+// Informações da Sessão do Usuário
+type
+  recSessao = record
+    HoraAtual:  String;
+    DiaSAtual:  String;
+    NomeUsu:    String;
+    LoginUsu:   String;
+    PodeVotar:  Boolean;
+  end;
+
+type
+// Informações do restaurante Vencedor
+  recVencedor = record
+    Votos:  Integer;
+    iTipo: Integer;         // Índice do Tipo de Refeição Vencedor
+    iLocal: Integer;        // Índice do Tipo de Estabelecimento Vencedor
+  end;
+
+// Categoria Estabelecimento
+type
+  recEstabelec = record
+    Nome: String;
+    Ender: String;
+    Bloqueado: Boolean;
+    NroVotos: Integer;
+  end;
+
+// Categoria Refeição
+type
+  recTipRefeicao = record
+    Tipo: String;
+    Locais: array [1..TotTipEst] of recEstabelec;
+  end;
+
+// Categoria Usuario
+type
+  recCategUsuario = record
+    Login: String;
+    Senha: String;
+    Nome:  String;
+    Votou: Boolean;
+  end;
+
+function ObtDiaSemana(nDia:Integer):String;
+
+implementation
+
+////////////////////////////////////////////////////////////////////////////////
+// ObtDiaSemana
+//    nDia: dia da semana no formato numérico
+////////////////////////////////////////////////////////////////////////////////
+function ObtDiaSemana(nDia:Integer):String;
+begin
+  case nDia of
+    1:  Result:='Domingo';
+    2:  Result:='Segunda-Feira';
+    3:  Result:='Terça-Feira';
+    4:  Result:='Quarta-Feira';
+    5:  Result:='Quinta-Feira';
+    6:  Result:='Sexta-Feira'
+    else
+        Result:='Sábado';
+  end;
+end;
+
+end.

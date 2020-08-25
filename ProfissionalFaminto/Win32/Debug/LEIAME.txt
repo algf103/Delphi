@@ -1,0 +1,31 @@
+Instruções do software:
+=================================
+
+ATENÇÃO: 
+========
+Para fins de teste, foi implementado no sistema, uma simulação de avanço de tempo(dia/hora).
+Inicialmente, o sistema simulará que o dia atual é um Domingo. Caso deseja-se alterar o dia inicial basta acessar o arquivo Config.ini, que encontra-se no diretório de instalação do software, e na tag DIAINICIAL configurar com outro dia da semana no fomato numérico.
+Nesse arquivo, para facilitar os testes, será possível, também, a configuração de avanço de relógio e horário de início e fim da votação.
+Para configurar o avanço do relógio deve-se alterar a tag SALTOTEMPO (formato hh:mm:ss). 
+Para configurar o início e fim da votação deve-se alterar as tags TEMPVOTINI (formato hh:mm:ss) e TEMPVOTFIN (formato hh:mm:ss), respectivamente.
+
+
+Modo de Uso:
+============
+1.	Informar login e senha para conectar ao sistema. Como não estamos utilizando banco de dados, os usuários cadastrados, também estão armazenados no arquivo Config.ini. Se for necessário, modificar a senha, basta acessar esse arquivo e alterar no login 		correspondente (tag SENHA<>).
+
+2.	Após o acesso ao sistema, será disponibilizado um combobox com as opções de refeição (lanche, pizzaria, massas, churrasco, comida italiana, comida japonesa, comida vegetariana, comida árabe) para o usuário escolher.
+
+3.	Na parte inferior da tela, será exibido as opções de restaurantes do tipo de refeição escolhida
+	
+4.	Escolher a opção preferida e clique em Vote Aqui
+
+5.	O resultado do restaurante mais votado será exibido na tela quando a votação for encerrada. 
+	Obs: Caso, mais de um restaurante receba a mesma quantidade de votos, o sistema escolherá o vencedor por sorteio entre os mais votados.
+	
+6.	A votação será liberada, novamente, no dia posterior e os restaurantes que forem eleitos durante a semana não estarão disponíveis para votação, exceto se começar nova semana.
+
+
+	
+	
+	

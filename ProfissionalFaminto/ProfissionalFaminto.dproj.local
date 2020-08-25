@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/20 11:30:46.000.809,=C:\Estudo\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020/08/20 11:49:33.000.876,C:\Estudo\Delphi\ProfissionalFaminto\UPrincipal.pas=C:\Estudo\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020/08/20 11:49:33.000.876,C:\Estudo\Delphi\ProfissionalFaminto\UPrincipal.dfm=C:\Estudo\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2020/08/20 12:20:04.000.275,C:\Estudo\Delphi\ProfissionalFaminto\ProfissionalFaminto.dproj=C:\Estudo\Delphi\Project1.dproj</Transaction>
+    <Transaction>2020/08/22 09:58:36.000.028,=C:\Estudo\Delphi\ProfissionalFaminto\Unit1.pas</Transaction>
+    <Transaction>2020/08/22 10:00:17.000.180,C:\Estudo\Delphi\ProfissionalFaminto\Globals.pas=C:\Estudo\Delphi\ProfissionalFaminto\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
